@@ -3,7 +3,7 @@ Curso nivelatorio para iniciarse en el vibe coding
 
 # Clases
 
-## 1.Landing Page 
+## 1.Landing Page ([plan de clase](clases/01-landing-page.md))
 ### 1.1 Terminal
 ### 1.2 Antigravity IDE
 ### 1.3 Code y ui lingo
