@@ -1,12 +1,14 @@
 # Sesión 1 de 3: Cómo hacer una landing page
 
+**Proyecto: tu landing page personal como profesional, construida desde cero.** Una hoja de vida interactiva con una sección /now.
+
 **Jueves 7:00 p. m. · 1 hora · Google Meet + streaming en YouTube**
 
 ## Objetivo
 
 Que cada persona termine la clase con:
 
-1. Una landing page hecha con IA en Antigravity.
+1. Su landing page personal: una presencia online propia, hecha desde cero con IA en Antigravity.
 2. Su código guardado en GitHub, con historial de cambios.
 3. Un link público en GitHub Pages para compartir.
 4. Una primera idea de cómo colaborar con otras personas en un mismo proyecto.
@@ -25,14 +27,15 @@ Profesionales que no son ingenieros y quieren diseñar sus propios productos con
   - Mac: abre la Terminal y escribe `git --version`. Si no lo tienes, el sistema te ofrece instalarlo.
   - Windows: instala [Git for Windows](https://git-scm.com/download/win)
 - [ ] Verificar que funciona: `git --version` debe mostrar un número de versión
+- [ ] Tener a mano tu material: tu hoja de vida o perfil de LinkedIn, y 3 cosas en las que estás enfocado en este momento (para tu sección /now)
 
 ## Agenda
 
 | Min | Bloque | Temas |
 |---|---|---|
-| 0-5 | Bienvenida | Historia: un economista que aprendió a programar solo. Demo de la landing terminada |
+| 0-5 | Bienvenida | Historia: un economista que aprendió a programar solo. Demo de una landing personal terminada |
 | 5-10 | Modelo mental | GitHub es como un Google Drive con historial de cambios y trabajo en equipo |
-| 10-25 | Construir la landing | 1.1 Terminal, 1.2 Antigravity IDE, 1.3 Code y UI lingo |
+| 10-25 | Construir la landing | 1.1 Terminal, 1.2 Antigravity IDE, 1.3 Code y UI lingo. Hoja de vida interactiva + /now |
 | 25-45 | Guardar y publicar | 1.4 Publish to GitHub desde Antigravity, 1.5 qué pasó por dentro (init, commit, remote, push), GitHub Pages |
 | 45-55 | Colaborar | Agregar un colaborador al repo, demo en vivo con un voluntario |
 | 55-60 | Cierre | Cada persona comparte su link público en el chat |
@@ -42,7 +45,9 @@ Profesionales que no son ingenieros y quieren diseñar sus propios productos con
 ### 0-5 · Bienvenida
 
 - Presentación personal y del nivelatorio: 3 sesiones, 3 productos cada vez más complejos.
-- Mostrar el resultado final: la landing publicada con su link.
+- Mostrar el resultado final: una landing personal publicada con su link.
+- El proyecto: no es la página de un negocio, es **tu presencia online como profesional**. Una hoja de vida interactiva que tú controlas, con una sección /now.
+- Hilo del nivelatorio: en la sesión 3 integraremos inteligencia artificial, y mostraré mi página personal como ejemplo de hasta dónde se puede llegar.
 - Reglas de juego: en Meet se puede preguntar por voz o chat; en YouTube, por chat (con retraso).
 
 ### 5-10 · Modelo mental
@@ -62,18 +67,31 @@ Profesionales que no son ingenieros y quieren diseñar sus propios productos con
 ```bash
 pwd          # ¿dónde estoy?
 ls           # ¿qué hay aquí?
-mkdir mi-landing
-cd mi-landing
+mkdir TU-USUARIO.github.io   # tu usuario de GitHub, exacto y en minúsculas
+cd TU-USUARIO.github.io
 ```
 
 **1.2 Antigravity**
 
-- Abrir la carpeta `mi-landing` en Antigravity.
-- Prompt sugerido:
+- Abrir la carpeta `TU-USUARIO.github.io` en Antigravity.
 
-> Crea una landing page en un solo archivo index.html para [mi negocio/proyecto]. Incluye un hero con título y botón de llamada a la acción, una sección de beneficios y un pie de página. Usa CSS dentro del mismo archivo y que se vea bien en celular.
+**¿Por qué ese nombre?** Si la carpeta (y el repo) se llama exactamente `TU-USUARIO.github.io`, tu página queda en `https://TU-USUARIO.github.io`, sin nada más al final. Es tu dirección personal en internet. Si te equivocas en una letra, no funciona: copia tu usuario desde tu perfil de GitHub.
+- Prompt sugerido (pegar después tu hoja de vida o el texto de tu LinkedIn):
+
+> Crea mi landing page personal como profesional, desde cero, en un solo archivo index.html.
+> Secciones:
+> 1. Hero con mi nombre, mi rol y una frase sobre lo que hago.
+> 2. Sobre mí, en un párrafo corto.
+> 3. Trayectoria como hoja de vida interactiva: cada experiencia se expande al hacer clic para ver el detalle.
+> 4. Una sección /now con lo que estoy haciendo en este momento.
+> 5. Contacto con un botón de llamada a la acción.
+> Usa CSS y JavaScript dentro del mismo archivo y que se vea bien en celular.
+> Esta es mi información: [pegar hoja de vida o LinkedIn]
+> Lo que estoy haciendo ahora: [3 cosas]
 
 - Abrir `index.html` en el navegador y pedir un cambio.
+
+**¿Qué es /now?** Una idea de [Derek Sivers](https://nownownow.com/about): una página que responde "¿en qué estás enfocado en este momento?". No es tu hoja de vida (lo que hiciste) ni tu bio (quién eres), es tu presente. Se actualiza cada pocos meses y le dice a quien te visita qué te importa hoy. Ejemplos en [nownownow.com](https://nownownow.com).
 
 **1.3 Lingo para pedirle bien a la IA**
 
@@ -85,6 +103,8 @@ cd mi-landing
 | CTA | Botón de llamada a la acción ("Escríbeme", "Comprar") |
 | Sección | Un bloque horizontal de contenido |
 | Responsive | Que se adapta a celular y computador |
+| Interactivo | Que reacciona cuando haces clic o pasas el mouse |
+| /now | Sección que cuenta en qué estás enfocado hoy |
 
 ### 25-45 · Guardar y publicar
 
@@ -95,7 +115,7 @@ cd mi-landing
 1. Abrir el panel **Source Control** en la barra lateral izquierda (el icono de ramas, o `Cmd+Shift+G` / `Ctrl+Shift+G`).
 2. Clic en **Publish to GitHub**.
 3. Cuando pregunte si quieres iniciar sesión con GitHub: **Permitir**. Se abre el navegador, autorizas y vuelves a Antigravity.
-4. Elegir **repositorio público** (GitHub Pages gratis solo funciona con repos públicos).
+4. Verificar que el nombre del repo sea exactamente `TU-USUARIO.github.io` y elegir **repositorio público** (GitHub Pages gratis solo funciona con repos públicos).
 5. Esperar a que termine. Antigravity muestra un aviso con el link al repo.
 
 ✅ *Checkpoint: escribe "publicado" en el chat.*
@@ -121,8 +141,8 @@ No tienen que memorizar los comandos. Tienen que reconocer las palabras cuando e
 
 **GitHub Pages** (todos, en el navegador)
 
-- En el repo: **Settings > Pages > Branch: main > Save**.
-- Esperar 1 o 2 minutos. El link queda así: `https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/`
+- Con el nombre `TU-USUARIO.github.io`, GitHub publica la página solo. Esperar 1 o 2 minutos y abrir `https://TU-USUARIO.github.io`
+- Si no aparece: en el repo, **Settings > Pages > Branch: main > Save**.
 
 ✅ *Checkpoint: pega tu link en el chat.*
 
@@ -145,7 +165,7 @@ Demo en vivo con un voluntario:
 ### 55-60 · Cierre
 
 - Cada persona pega su link de GitHub Pages en el chat.
-- Tarea: personalizar la landing con 3 cambios, cada uno en su propio commit.
+- Tarea: personalizar tu landing con 3 cambios, cada uno en su propio commit. Opcional: registrar tu página /now en [nownownow.com](https://nownownow.com).
 - Adelanto de la sesión 2: un ecommerce con carrito y pagos por WhatsApp.
 
 ## Problemas frecuentes
@@ -155,6 +175,8 @@ Demo en vivo con un voluntario:
 | No aparece el botón **Publish to GitHub** | Falta Git. Mac: en la terminal escribir `git --version` y aceptar la instalación. Windows: instalar Git for Windows y reiniciar Antigravity |
 | El login de GitHub no vuelve a Antigravity | Cerrar la pestaña del navegador, volver a Antigravity y repetir **Publish to GitHub** |
 | `Please tell me who you are` | Pedirle al agente: "Configura git con mi nombre TU NOMBRE y mi correo TU CORREO" |
+| La página no aparece en `TU-USUARIO.github.io` | Revisar que el repo se llame exactamente igual a tu usuario. Si no: **Settings > General > Repository name** y corregirlo |
+| Ya tengo un repo `TU-USUARIO.github.io` | Solo se puede tener uno. Usar otro nombre (por ejemplo `mi-landing`) y la página queda en `https://TU-USUARIO.github.io/mi-landing/` |
 | Elegí repositorio privado | En github.com: **Settings > General > Change visibility > Public** |
 | Pages muestra error 404 | Esperar 2 minutos y verificar que el archivo se llame exactamente `index.html` |
-| Nada funciona y la clase sigue | Plan B: en github.com crear el repo a mano, **Add file > Upload files** y arrastrar `index.html`. Resolver git después |
+| Nada funciona y la clase sigue | Plan B: en github.com crear el repo `TU-USUARIO.github.io` a mano, **Add file > Upload files** y arrastrar `index.html`. Resolver git después |
