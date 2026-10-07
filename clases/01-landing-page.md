@@ -115,7 +115,7 @@ cd TU-USUARIO.github.io
 1. Abrir el panel **Source Control** en la barra lateral izquierda (el icono de ramas, o `Cmd+Shift+G` / `Ctrl+Shift+G`).
 2. Clic en **Publish to GitHub**.
 3. Cuando pregunte si quieres iniciar sesión con GitHub: **Permitir**. Se abre el navegador, autorizas y vuelves a Antigravity.
-4. Verificar que el nombre del repo sea exactamente `TU-USUARIO.github.io` y elegir **repositorio público** (GitHub Pages gratis solo funciona con repos públicos).
+4. Verificar que el nombre del repo sea exactamente `TU-USUARIO.github.io` y elegir **repositorio público** (GitHub Pages gratis solo funciona con repos públicos). **Nota:** Revisar cómo hacerlo con dos clicks como propone AF.
 5. Esperar a que termine. Antigravity muestra un aviso con el link al repo.
 
 ✅ *Checkpoint: escribe "publicado" en el chat.*
